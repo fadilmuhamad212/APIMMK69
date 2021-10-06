@@ -37,8 +37,8 @@ mongoose.connect(process.env.DB_CONN, { useNewUrlParser: true,
     useFindAndModify: false }, ()=> console.log('connected'));
 
 //listen to server
-app.listen(3001)
+// app.listen(3001)
 
-// var server = app.listen(process.env.PORT || 8080, function () {
-//     var port = server.address().port;
-//   });
+var server = app.listen(process.env.PORT || 8080, function () {
+    var port = server.address().port;
+  });
